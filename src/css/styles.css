@@ -1,0 +1,170 @@
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.modal {
+    height: 774px;
+}
+
+.difficulty {
+    padding-top: 158px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.difficulty__form {
+    width: 480px;
+    height: 459px;
+    padding-top: 52px;
+    border-radius: 12px;
+    background: #c2f5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+.difficulty .form__title {
+    width: 208px;
+    font-size: 40px;
+    font-style: normal;
+    line-height: 48px;
+    text-align: center;
+    color: #004980;
+}
+.difficulty .form__levels {
+    margin-bottom: 19px;
+    display: flex;
+    gap: 26px;
+}
+.difficulty .form__level {
+    width: 98px;
+    height: 98px;
+    border-radius: 12px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    font-style: normal;
+    line-height: 72px;
+    color: var(--blue-100, #0080c1);
+    cursor: pointer;
+}
+.difficulty .form__level--selected {
+    border: 3px solid #0080c1;
+}
+
+.playing {
+    padding: 22px 22px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+.playing__header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.playing__timer {
+    display: flex;
+    flex-direction: column;
+}
+.playing .timer__litherals {
+    display: flex;
+    justify-content: end;
+    gap: 57px;
+}
+.playing .timer__litheral {
+    font-size: 16px;
+    line-height: 32px;
+    color: #fff;
+}
+.playing .timer__digits {
+    margin-top: -10px;
+    font-size: 64px;
+    line-height: 72px;
+    color: #fff;
+}
+.playing__cards {
+    display: grid;
+    grid-template-columns: repeat(9, 95px);
+    gap: 15px;
+    align-content: center;
+    justify-content: center;
+}
+.playing__card {
+    height: 133px;
+    border-radius: 4px;
+    background: #fff;
+}
+.playing .card__face {
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.playing .card .face__top,
+.playing .card .face__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.playing .card .face__top {
+    align-self: start;
+}
+.playing .card .face__middle {
+    align-self: center;
+}
+.playing .card .face__bottom {
+    align-self: end;
+    transform: rotate(180deg);
+}
+.playing .card .face__rank {
+    font-size: 24px;
+    line-height: 32px;
+}
+.playing .shirt {
+    background: url(../../static/card-shirt.svg);
+    cursor: pointer;
+}
+
+.back {
+    opacity: 0.25;
+}
+
+.final {
+    position: relative;
+}
+.final__form {
+    width: 480px;
+    height: 459px;
+    padding-top: 26px;
+    background: #c2f5ff;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 158px;
+    left: 272px;
+}
+.final__title {
+    margin-top: 9px;
+    margin-bottom: 28px;
+    font-size: 40px;
+    line-height: 48px;
+    color: var(--blue-120, #004980);
+}
+.final__text {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 32px;
+}
+.final__time {
+    margin-bottom: 40px;
+    font-size: 64px;
+    line-height: 72px;
+}
