@@ -2,9 +2,9 @@ export function renderStartPage(
     appElement: Element,
     startGame: (difficulty: number) => void,
 ): void {
-    let newDifficulty: number = 0;
+    let newDifficulty = 0;
 
-    const startPageHtml: string = `
+    const startPageHtml = `
         <div class="modal difficulty">
             <div class="difficulty__form form">
                 <h2 class="form__title">Выбери сложность</h2>

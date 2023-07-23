@@ -34,7 +34,7 @@ export function getGameInterfaceHtml(
         })
         .join("");
 
-    const interfaceHtml: string = `
+    const interfaceHtml = `
         <header class="playing__header">
             <div class="playing__timer timer">
                 <p class="timer__litherals">

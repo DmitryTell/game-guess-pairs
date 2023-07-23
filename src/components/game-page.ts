@@ -17,13 +17,11 @@ export function renderGamePage(
     )
         ? "no-started"
         : window.localStorage.getItem("game-status");
-    let openedCards: number = Number(
-        window.localStorage.getItem("opened-cards"),
-    );
+    let openedCards = Number(window.localStorage.getItem("opened-cards"));
     let previousCard: string | null = window.localStorage.getItem("previous");
     let newWinStatus: string | null = null;
-    let min: number = Number(window.localStorage.getItem("min"));
-    let sec: number = Number(window.localStorage.getItem("sec"));
+    let min = Number(window.localStorage.getItem("min"));
+    let sec = Number(window.localStorage.getItem("sec"));
     let timer: NodeJS.Timer;
     let countdown: NodeJS.Timeout;
 

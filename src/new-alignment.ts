@@ -9,7 +9,7 @@ export function getNewAlignment(difficulty: number): {
 
     const max: number = difficulty * 3;
 
-    for (let i: number = 0; i < max; i++) {
+    for (let i = 0; i < max; i++) {
         const index: number = getRandomIndex(firstDeck.length);
 
         pairs.push(firstDeck[index]);

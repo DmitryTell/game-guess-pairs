@@ -5,15 +5,13 @@ import {
     getAlignmentFromLocalStoreAge,
 } from "../helper";
 
-const a: number = 'asdasd'
-
 export function renderFinalPage(
     appElement: Element,
     winStatus: string,
     startNewGame: () => void,
 ): void {
-    const spentMin: number = Number(window.localStorage.getItem("min"));
-    const spentSec: number = Number(window.localStorage.getItem("sec"));
+    const spentMin = Number(window.localStorage.getItem("min"));
+    const spentSec = Number(window.localStorage.getItem("sec"));
 
     const backCardsHtml: string = getAlignmentFromLocalStoreAge()
         .cards.map((card: Card): string => {
@@ -40,7 +38,7 @@ export function renderFinalPage(
         })
         .join("");
 
-    const finalFormHtml: string = `
+    const finalFormHtml = `
         <div class="final__form">
             <img src="${
                 winStatus === "win" ? "./static/win.png" : "./static/lose.png"

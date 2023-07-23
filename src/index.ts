@@ -9,7 +9,7 @@ const appElement: Element | null = document.querySelector("#app");
 let page: string | null = window.localStorage.getItem("page");
 let winStatus: string | null = window.localStorage.getItem("win-status");
 
-export let difficulty: number = 0;
+export let difficulty = 0;
 
 const renderApp = (): void => {
     if (!page && appElement) {
